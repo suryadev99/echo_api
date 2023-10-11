@@ -1,0 +1,20 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          ["AWS/ECS", "CPUUtilization", "ServiceName", "${serviceName}", "ClusterName", "${clusterName}"]
+        ],
+        "period": 300,
+        "stat": "Average",
+        "region": "${region}",
+        "title": "Flask CPU Utilization"
+}
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Flask~=2.3.2
+pytest~=6.2.3
+typing~=3.7.4.3
+gunicorn~=21.2.0
