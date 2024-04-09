@@ -9,6 +9,7 @@ class EndpointError(Exception):
 
 
 def handle_endpoint_error(error):
+    """ Handling endpoint errors """
     response = jsonify({'error': str(error)})
     response.status_code = error.status_code
     return response
