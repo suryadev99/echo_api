@@ -16,12 +16,15 @@ def handle_endpoint_error(error):
 
 
 def not_found_error(error):
+    """ Handling Not Found error"""
     return jsonify({"error": "Not found"}), 404
 
 
 def bad_request_error(error):
+    """ Handling bad request error """
     return jsonify({"error": "Bad request"}), 400
 
 
 def unauthorized_error(error):
+    """ Handling unathorized error """
     return jsonify({"error": "Unauthorized"}), 401
