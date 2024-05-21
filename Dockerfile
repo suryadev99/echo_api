@@ -1,6 +1,7 @@
 # --- Build Stage ---
 FROM python:3.8-slim as builder
 
+#Setting working directory
 WORKDIR /app
 
 # Install build dependencies
@@ -37,7 +38,7 @@ ENV PYTHONPATH=/home/appuser/.local/lib/python3.8/site-packages:$PYTHONPATH
 
 RUN echo $PYTHONPATH
 
-
+#check to see if files are there
 RUN ls -la /home/appuser/.local/bin
 
 # Environment variables for Flask
