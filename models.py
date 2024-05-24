@@ -4,6 +4,9 @@ from typing import Dict, Optional
 
 @dataclass
 class EndpointResponse:
+    """
+    class endpoint response
+    """
     code: int
     headers: Dict[str, str]
     body: Optional[str]
@@ -11,6 +14,9 @@ class EndpointResponse:
 
 @dataclass
 class EndpointAttributes:
+    """
+    class endpoint attributes
+    """
     verb: str
     path: str
     response: EndpointResponse
@@ -18,6 +24,9 @@ class EndpointAttributes:
 
 @dataclass
 class Endpoint:
+    """
+    endpoint class
+    """
     type: str
     id: str
     attributes: EndpointAttributes
